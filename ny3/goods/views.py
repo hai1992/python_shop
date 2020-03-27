@@ -72,6 +72,7 @@ class GoodsDetailView(View):
             return JsonResponse(result)
         else:
             sku_res={}
+            print(1)
             sku_catalog=sku_item.SPU_ID.catalog
             sku_res['image']=str(sku_item.default_image_url)
             sku_res['caption']=sku_item.caption
